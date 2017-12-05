@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "allowUnusedLabels": true,
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": false,
+        "sourceMap": false,
+        "target": "es5"
+    },
+    "exclude": ["node_modules"]
+}

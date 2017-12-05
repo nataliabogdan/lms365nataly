@@ -1,0 +1,11 @@
+/dist/*.js
+/dist/*.json
+/dist/src/*.d.ts
+*.log
+/node_modules/
+/typings/
+/reports/
+webpack.config.js
+/infrastructure/constants.ts
+files/Screenshots/
+webpack.config.js
