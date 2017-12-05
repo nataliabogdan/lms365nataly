@@ -470,32 +470,19 @@ export class CourseCreator {
 
         this._browser
             .useXpath()
-<<<<<<< HEAD
             .waitForElementVisible('//a[contains(@apptype, "Quiz")]', Constants.Timeouts.Huge)
             .click('//a[contains(@apptype, "Quiz")]')
             .useCss() 
             .waitForElementVisible('iframe.k-content-frame', Constants.Timeouts.Huge);
-=======
-            .waitForElementVisible('//div[contains(@id, "entitiesFor_CourseApps_Quiz_Picker_Entities")]/span[contains(@class, "select-entities")]', Constants.Timeouts.Large)
-            .click('//div[contains(@id, "entitiesFor_CourseApps_Quiz_Picker_Entities")]/span[contains(@class, "select-entities")]')
-            .useCss()
-            .waitForElementVisible('iframe.k-content-frame', Constants.Timeouts.Large);
->>>>>>> BN-Scorm-Updates
 
         this._helper.goToiFrame('iframe.k-content-frame', (frame) => {
             this._browser
                 .useXpath()
                 .moveToElement('//th[contains(@data-field, "Title")]//span[contains(@class, "k-icon")]', 5, 5)
                 .click('//th[contains(@data-field, "Title")]//span[contains(@class, "k-icon")]')
-<<<<<<< HEAD
                 .waitForElementVisible('//input[contains(@data-bind, "value:filters[0].value")]', Constants.Timeouts.Huge)                
                 .clearValue('//input[contains(@data-bind, "value:filters[0].value")]')
                 .waitForElementVisible('//input[contains(@data-bind, "value:filters[0].value")]', Constants.Timeouts.Huge)                
-=======
-                .waitForElementVisible('//input[contains(@data-bind, "value:filters[0].value")]', Constants.Timeouts.Large)
-                .clearValue('//input[contains(@data-bind, "value:filters[0].value")]')
-                .waitForElementVisible('//input[contains(@data-bind, "value:filters[0].value")]', Constants.Timeouts.Large)
->>>>>>> BN-Scorm-Updates
                 .setValue('//input[contains(@data-bind, "value:filters[0].value")]', quizLM, () => {
                     this._browser
                         .useXpath()

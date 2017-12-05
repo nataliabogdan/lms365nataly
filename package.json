@@ -1,11 +1,13 @@
 {
-  "name": "lms365.ui-tests",
+  "name": "lms365nataly",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "test": "nightwatch --reporter ./nightwatch/html-reporter.js"
+    "test": "nightwatch --reporter ./nightwatch/html-reporter.js",
+    "test:smoke": "nightwatch dist/smoke.test.js --reporter ./nightwatch/html-reporter.js",
+    "test:base": "nightwatch dist/base.test.js --reporter ./nightwatch/html-reporter.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,7 +16,7 @@
     "nightwatch": "^0.9.12",
     "nightwatch-html-reporter": "^2.0.2",
     "selenium-server": "^3.4.0",
-    "selenium-server-standalone-jar": "3.6.0",
+    "selenium-server-standalone-jar": "3.7.1",
     "ts-loader": "^2.0.0",
     "typescript": "2.5.3",
     "webpack": "^1.14.0",
